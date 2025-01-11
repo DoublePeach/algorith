@@ -8,7 +8,13 @@ public class T47 {
     public static int solution(int n, int l, int r, int[] a) {
         // PLEASE DO NOT MODIFY THE FUNCTION SIGNATURE
         // write code here
-        return 0;
+        int count = 0;
+        for (int j : a) {
+            if (j >= l && j <= r && j % 2 == 0) {
+                count++;
+            }
+        }
+        return count;
     }
 
     public static void main(String[] args) {
